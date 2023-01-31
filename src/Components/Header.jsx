@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import ParticlesBg from "particles-bg";
 
 const Header = (props) => {
     if (!props.data) return null;
 
-    const project = props.data.project;
-    const github = props.data.github;
+    const torrijaHeader = "images/" + props.data.torrijaHeader;
     const name = props.data.name;
     const description = props.data.description;
     
@@ -55,6 +54,7 @@ const Header = (props) => {
               <h1 className="responsive-headline">{name}</h1>
               <h3>{description}.</h3>
             <hr />
+            <img src={torrijaHeader} alt="torrija" style={{width:"30vw"}}></img>
           </div>
         </div>
 

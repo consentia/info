@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Contact = (props)=> {
     if (!props.data) return null;
@@ -31,7 +31,7 @@ const Contact = (props)=> {
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
-                      Name <span className="required">*</span>
+                      Nombre <span className="required">*</span>
                     </label>
                     <input
                       type="text"
@@ -58,7 +58,7 @@ const Contact = (props)=> {
                   </div>
 
                   <div>
-                    <label htmlFor="contactSubject">Subject</label>
+                    <label htmlFor="contactSubject">Asunto</label>
                     <input
                       type="text"
                       defaultValue=""
@@ -71,7 +71,7 @@ const Contact = (props)=> {
 
                   <div>
                     <label htmlFor="contactMessage">
-                      Message <span className="required">*</span>
+                      Mensaje <span className="required">*</span>
                     </label>
                     <textarea
                       cols="50"
@@ -82,7 +82,7 @@ const Contact = (props)=> {
                   </div>
 
                   <div>
-                    <button className="submit">Submit</button>
+                    <button className="submit">Enviar</button>
                     <span id="image-loader">
                       <img alt="" src="images/loader.gif" />
                     </span>
